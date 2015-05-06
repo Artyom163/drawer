@@ -28,15 +28,37 @@ class ViewController: UIViewController {
         theDrawView.setNeedsDisplay()
     }
     
-    @IBAction func colorTapped(button: UIButton!) {
-        var theDrawView: DrawView = drawView as DrawView
-        var color: UIColor!
-        if (button.titleLabel!.text == "Red") {
-            color = UIColor.redColor()
-        } else if (button.titleLabel!.text == "Black") {
-            color = UIColor.blackColor()
-        }
-        drawView.drawColor = color
+    @IBAction func WidthChange(sender: UISlider) {
+        var theDrawView = drawView as DrawView
+        theDrawView.lineWidth = CGFloat(sender.value) * 10
     }
+    
+    @IBAction func ColorChange(sender: UISlider) {
+        var theDrawView = drawView as DrawView
+        switch (sender.tag) {
+        case 1:
+            theDrawView.Red = CGFloat(sender.value)
+            break
+        case 2:
+            theDrawView.Blue = CGFloat(sender.value)
+            break
+        case 3:
+            theDrawView.Green = CGFloat(sender.value)
+            break
+        default:
+            break
+        }
+    }
+    
+    /*@IBAction func colorTapped(button: UIButton!) {
+     *   var theDrawView: DrawView = drawView as DrawView
+     *   var color: UIColor!
+     *   if (button.titleLabel!.text == "Red") {
+     *       color = UIColor.redColor()
+     *   } else if (button.titleLabel!.text == "Black") {
+     *       color = UIColor.blackColor()
+     *   }
+     *   drawView.drawColor = color
+    }*/
 }
 

@@ -11,12 +11,22 @@ import UIKit
 class Line {
     var start: CGPoint
     var end: CGPoint
-    var color: UIColor
+    //var color: UIColor
+    var width: CGFloat
     
-    init(start _start: CGPoint, end _end: CGPoint, color _color: UIColor!) {
+    var red: CGFloat
+    var blue: CGFloat
+    var green: CGFloat
+    
+    init(start _start: CGPoint, end _end: CGPoint, width _width: CGFloat, red _red: CGFloat, blue _blue: CGFloat, green _green: CGFloat) {
         start = _start
         end = _end
-        color = _color
+        //color = _color
+        width = _width
+        
+        red = _red
+        blue = _blue
+        green = _green
     }
     
 }
