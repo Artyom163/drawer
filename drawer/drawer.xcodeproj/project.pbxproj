@@ -86,8 +86,6 @@
 				8464AA821AF7BF4F0021F75A /* DrawView.swift */,
 				8464AA841AF7C14F0021F75A /* Line.swift */,
 				8464AA661AF7B5510021F75A /* Main.storyboard */,
-				8464AA691AF7B5510021F75A /* Images.xcassets */,
-				8464AA6B1AF7B5510021F75A /* LaunchScreen.xib */,
 				8464AA601AF7B5510021F75A /* Supporting Files */,
 			);
 			path = drawer;
@@ -96,6 +94,8 @@
 		8464AA601AF7B5510021F75A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8464AA691AF7B5510021F75A /* Images.xcassets */,
+				8464AA6B1AF7B5510021F75A /* LaunchScreen.xib */,
 				8464AA611AF7B5510021F75A /* Info.plist */,
 			);
 			name = "Supporting Files";
